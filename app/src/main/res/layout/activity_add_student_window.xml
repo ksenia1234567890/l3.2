@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/surnameInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_margin="10dp"
+        android:hint="Введите фамилию студента"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/baseline_person_2_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/surnameInputLayout"
+        android:backgroundTint="@color/white"
+        android:layout_margin="10dp"
+        android:hint="Введите имя студента"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/baseline_person_2_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/middleNameInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameInputLayout"
+        android:backgroundTint="@color/white"
+        android:layout_margin="10dp"
+        android:hint="Введите отчество студента"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/baseline_person_2_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/middleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+</RelativeLayout>
